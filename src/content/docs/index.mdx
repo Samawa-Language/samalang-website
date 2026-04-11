@@ -1,0 +1,86 @@
+---
+title: Home
+description: A simple, fast programming language based on Lua and Samawa culture.
+template: splash
+hero:
+  tagline: Blending Lua's speed with the unique Samawa dialect. Lightweight, fast, and culturally rooted.
+  image:
+    file: ../../assets/icon-extension.png
+  actions:
+    - text: Get Started
+      link: /guides/get-started/
+      icon: right-arrow
+      variant: primary
+    - text: View on GitHub
+      link: https://github.com/Samawa-Language/samawa-language
+      icon: github
+      variant: minimal
+---
+
+import { Card, CardGrid, Steps, Tabs, TabItem, LinkCard } from '@astrojs/starlight/components';
+
+## Why Choose SamaLang?
+
+<CardGrid stagger>
+	<Card title="Localized Syntax" icon="translate">
+		Featuring keywords rooted in the **Samawa language**, making logical flow feel closer to local heritage.
+	</Card>
+	<Card title="Lua Performance" icon="star">
+		Built on the **Lua engine**, ensuring ultra-fast execution and efficient memory usage.
+	</Card>
+	<Card title="Easy to Learn" icon="rocket">
+		Simple and direct. Perfect for beginners who want to learn programming with a cultural twist.
+	</Card>
+	<Card title="Interoperability" icon="setting">
+		Seamlessly integrate with existing Lua modules, offering high flexibility for developers.
+	</Card>
+</CardGrid>
+
+---
+
+## Quick Look at SamaLang
+
+See how Samalang blends traditional logic with modern performance.
+
+<Tabs>
+  <TabItem label="Hello World">
+    ```lua
+    -- Traditional Greeting
+    tulis("Salam Sarea!") 
+    ```
+  </TabItem>
+  <TabItem label="Local Variables">
+    ```lua
+    ada aran = "SamaLang"
+    ada visi = "Digitalizing Culture"
+    
+    tulis(aran .. " is " .. visi)
+    ```
+  </TabItem>
+  <TabItem label="Function">
+    ```lua
+    umur = 12
+    
+    fungsi print_umur(umur)
+      return umur
+    jure_mo
+    ```
+  </TabItem>
+</Tabs>
+
+---
+
+## Next Steps
+
+<CardGrid>
+  <LinkCard
+    title="Core Concepts"
+    description="Learn about the variables, types, and syntax of SamaLang."
+    href="/syntax/ada"
+  />
+  <LinkCard
+    title="Technical Reference"
+    description="Deep dive into the underlying Lua engine and API bridge."
+    href="/reference/example"
+  />
+</CardGrid>
