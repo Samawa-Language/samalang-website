@@ -5,6 +5,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Samalang",
+      favicon: "/icon-extension.ico",
       logo: {
         src: "./src/assets/icon-extension.png",
       },
