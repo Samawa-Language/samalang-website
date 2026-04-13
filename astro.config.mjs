@@ -93,6 +93,13 @@ export default defineConfig({
           ],
         },
         {
+          label: "Editor Support",
+          items: [
+            {label: "VSCode", slug: "editor-support/vscode" },
+            {label: "Zed", slug: "editor-support/zed" },
+          ]
+        },
+        {
           label: "Reference",
           autogenerate: { directory: "reference" },
         },
