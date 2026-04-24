@@ -11,6 +11,14 @@ export default defineConfig({
         src: "./src/assets/icon-extension.png",
       },
       head: [
+        // Google Site Verification
+        {
+          tag: "meta",
+          attrs: {
+            name: "google-site-verification",
+            content: "GM7nwkL1De6nDTqyLvcNws0aBA97tgP-SCoCjAFu628",
+          },
+        },
         {
           tag: "meta",
           attrs: {
