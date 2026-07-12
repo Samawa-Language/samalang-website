@@ -1,17 +1,46 @@
 ---
 title: Getting Started
-description: Learn SamaLang—where modern coding meets Samawa culture.
+description: Start programming with SamaLang — Mulai berprogram dengan SamaLang
 ---
 
-Welcome to **SamaLang** (Samawa-Language). This project is built to simplify the journey of learning programming while celebrating the **Samawa language and culture**. 
+Welcome to **SamaLang v2.0** — where modern coding meets Samawa culture.
 
-By building on top of **Lua**, SamaLang offers a powerful, lightweight environment with a meaningful cultural identity.
+Selamat datang di **SamaLang v2.0** — di mana pemrograman modern bertemu budaya Samawa.
+
+SamaLang is a programming language built on top of **Lua**, using keywords from the **Samawa language**. It offers a powerful, lightweight environment with a meaningful cultural identity.
+
+SamaLang adalah bahasa pemrograman yang dibangun di atas **Lua**, menggunakan kata kunci dari **bahasa Samawa**. Menawarkan lingkungan yang powerful dan ringan dengan identitas budaya yang bermakna.
 
 ## Why SamaLang?
 
 * **Approachable Logic:** Simplifies complex programming concepts for beginners.
 * **Cultural Identity:** Integrates Samawa vocabulary and values into the learning experience.
 * **Lua Powered:** Benefit from the speed and efficiency of a world-class scripting engine.
+* **Full Lua Compatibility:** Access the entire Lua standard library and ecosystem.
+
+* **Logika Mudah:** Menyederhanakan konsep pemrograman yang kompleks untuk pemula.
+* **Identitas Budaya:** Mengintegrasikan kosakata dan nilai-nilai Samawa dalam pembelajaran.
+* **Berbasis Lua:** Manfaatkan kecepatan dan efisiensi dari engine scripting kelas dunia.
+* **Kompatibilitas Penuh Lua:** Akses seluruh standard library dan ekosistem Lua.
+
+## Quick Example
+
+```bash
+# Sapaan tradisional
+tulis("Salam Sarea!")
+
+# Variabel lokal
+ada nama = "SamaLang"
+ada versi = 2.0
+tulis(nama .. " v" .. tostring(versi))
+
+# Fungsi
+fungsi tambah(a, b)
+    semalik a + b
+jure_mo
+
+tulis(tambah(3, 5)) -- Output: 8
+```
 
 ## The Journey
 
@@ -22,7 +51,7 @@ Understand the fundamental syntax of SamaLang and how it incorporates traditiona
 Learn how the language handles logic through conditionals and loops, reflecting the way we solve problems in everyday Samawa life.
 
 ### Structured Data with Tables
-Explore how information is organized using Tables—the flexible and powerful core of the underlying Lua engine.
+Explore how information is organized using Tables — the flexible and powerful core of the underlying Lua engine.
 
 ### The Technical Bridge
 Discover how SamaLang interfaces with the Lua runtime, allowing you to use professional-grade tools while maintaining a familiar cultural syntax.
@@ -31,7 +60,29 @@ Discover how SamaLang interfaces with the Lua runtime, allowing you to use profe
 
 ## The Vision
 
-The goal of Samalang is to empower developers to build modern technology without losing their roots. By learning this language, you aren't just writing code; you are carrying the Samawa spirit into the future of the digital world.
+The goal of SamaLang is to empower developers to build modern technology without losing their roots. By learning this language, you aren't just writing code; you are carrying the Samawa spirit into the future of the digital world.
 
-## Ready to explore?
-Check out the [Lua Reference](https://www.lua.org/) for a deep dive into the technical engine.
+## Ready to Explore?
+
+<CardGrid>
+  <LinkCard
+    title="Data Types"
+    description="Learn about numbers, strings, booleans, nil, and tables."
+    href="/concepts/data-types"
+  />
+  <LinkCard
+    title="Syntax Reference"
+    description="All 18 Samawa keywords with examples."
+    href="/syntax/ada"
+  />
+  <LinkCard
+    title="Operators"
+    description="Arithmetic, comparison, logical, and string operators."
+    href="/concepts/operators"
+  />
+  <LinkCard
+    title="Lua Reference"
+    description="Deep dive into the underlying Lua engine."
+    href="/reference/example"
+  />
+</CardGrid>

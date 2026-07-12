@@ -1,0 +1,76 @@
+---
+title: "atau (or)"
+description: Logical OR operator — operator logika OR
+---
+
+## Description / Deskripsi
+
+The `atau` keyword is the logical OR operator in SamaLang. It returns `true` if at least one operand is `true`.
+It is equivalent to `or` in standard Lua.
+
+Keyword `atau` adalah operator logika OR dalam SamaLang. Menghasilkan `true` jika setidaknya satu operand bernilai `true`.
+Setara dengan `or` di Lua.
+
+## Usage / Penggunaan
+
+```bash
+lamen operand1 atau operand2 tres
+    -- code runs when at least one is true
+jure_mo
+```
+
+## Examples
+
+### Basic OR
+
+```bash
+ada a = tutu
+ada b = siong
+
+lamen a atau b tres
+    tulis("Minimal satu benar")
+jure_mo
+-- Output: Minimal satu benar
+```
+
+### Default Value Pattern
+
+```bash
+ada nama = nda_isi
+nama = atau nama "Pengguna"
+tulis(nama) -- Output: Pengguna
+```
+
+### With Comparison
+
+```bash
+ada suhu = 38
+
+lamen suhu > 37 atau suhu < 35 tres
+    tulis("Suhu tidak normal")
+jure_mo
+-- Output: Suhu tidak normal
+```
+
+### Short-Circuit Evaluation
+
+```bash
+fungsi cek(n)
+    tulis("Fungsi dipanggil")
+    semalik n > 0
+jure_mo
+
+ada nilai = -1
+
+-- cek(nilai) tidak dipanggil karena kondisi pertama true
+lamen nilai < 0 atau cek(nilai) tres
+    tulis("Negatif")
+jure_mo
+-- Output:
+-- Negatif
+-- (cek() not called because first operand is true)
+```
+
+:::note
+`atau` is the Samawa equivalent of Lua's `or`. It uses short-circuit evaluation — if the first operand is `true`, the second operand is not evaluated.
+:::

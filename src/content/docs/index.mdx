@@ -1,9 +1,9 @@
 ---
 title: SamaLang
-description: A simple, fast programming language based on Lua and Samawa culture.
+description: SamaLang v2.0 — A programming language blending Lua performance with Samawa culture
 template: splash
 hero:
-  tagline: Blending Lua's speed with the unique Samawa dialect. Lightweight, fast, and culturally rooted.
+  tagline: SamaLang v2.0 — Blending Lua's speed with the unique Samawa dialect. Lightweight, fast, and culturally rooted.
   image:
     file: ../../assets/icon-extension.png
   actions:
@@ -31,7 +31,7 @@ import { Card, CardGrid, Steps, Tabs, TabItem, LinkCard } from '@astrojs/starlig
 	<Card title="Easy to Learn" icon="rocket">
 		Simple and direct. Perfect for beginners who want to learn programming with a cultural twist.
 	</Card>
-	<Card title="Interoperability" icon="setting">
+	<Card title="Full Compatibility" icon="setting">
 		Seamlessly integrate with existing Lua modules, offering high flexibility for developers.
 	</Card>
 </CardGrid>
@@ -40,33 +40,74 @@ import { Card, CardGrid, Steps, Tabs, TabItem, LinkCard } from '@astrojs/starlig
 
 ## Quick Look at SamaLang
 
-See how Samalang blends traditional logic with modern performance.
+See how SamaLang blends traditional logic with modern performance.
 
 <Tabs>
   <TabItem label="Hello World">
-    ```lua
-    -- Traditional Greeting
-    tulis("Salam Sarea!") 
+    ```bash
+    # Sapaan tradisional
+    tulis("Salam Sarea!")
     ```
   </TabItem>
   <TabItem label="Local Variables">
-    ```lua
+    ```bash
     ada aran = "SamaLang"
     ada visi = "Digitalizing Culture"
-    
-    tulis(aran .. " is " .. visi)
+
+    tulis(aran .. " v2.0")
+    tulis("Visi: " .. visi)
     ```
   </TabItem>
   <TabItem label="Function">
-    ```lua
-    umur = 12
-    
-    fungsi print_umur(umur)
-      return umur
+    ```bash
+    fungsi sapa(nama)
+        semalik "Halo, " .. nama .. "!"
+    jure_mo
+
+    tulis(sapa("Dunia"))
+    ```
+  </TabItem>
+  <TabItem label="Control Flow">
+    ```bash
+    ada umur = 20
+
+    lamen umur >= 18 tres
+        tulis("Dewasa")
+    jure_mo
+    lamen_no
+        tulis("Anak-anak")
     jure_mo
     ```
   </TabItem>
+  <TabItem label="Loop">
+    ```bash
+    # Hitung mundur
+    untuk i = 5, 1, -1 boat
+        tulis(i)
+    jure_mo
+    tulis("Lepas landas!")
+    ```
+  </TabItem>
 </Tabs>
+
+---
+
+## Keyword Mapping
+
+SamaLang uses Samawa keywords that transpile directly to Lua:
+
+| SamaLang | Lua | Meaning |
+|----------|-----|---------|
+| `ada` | `local` | Declare variable |
+| `fungsi` | `function` | Define function |
+| `lamen` | `if` | Conditional |
+| `tres` | `then` | Start block |
+| `jure_mo` | `end` | End block |
+| `selama` | `while` | While loop |
+| `untuk` | `for` | For loop |
+| `tulis` | `print` | Print output |
+| `semalik` | `return` | Return value |
+| `nda_isi` | `nil` | Null value |
 
 ---
 
@@ -74,13 +115,23 @@ See how Samalang blends traditional logic with modern performance.
 
 <CardGrid>
   <LinkCard
-    title="Core Concepts"
-    description="Learn about the variables, types, and syntax of SamaLang."
+    title="Get Started"
+    description="Install SamaLang and write your first program."
+    href="/guides/get-started/"
+  />
+  <LinkCard
+    title="Data Types"
+    description="Numbers, strings, booleans, nil, and tables."
+    href="/concepts/data-types"
+  />
+  <LinkCard
+    title="Syntax Reference"
+    description="All 18 Samawa keywords with examples."
     href="/syntax/ada"
   />
   <LinkCard
-    title="Technical Reference"
-    description="Deep dive into the underlying Lua engine and API bridge."
+    title="Lua Reference"
+    description="Technical reference for the underlying Lua engine."
     href="/reference/example"
   />
 </CardGrid>

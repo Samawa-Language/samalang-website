@@ -1,0 +1,124 @@
+---
+title: SamaLang
+description: SamaLang v2.0 — Bahasa pemrograman yang memadukan performa Lua dengan budaya Samawa
+template: splash
+hero:
+  tagline: SamaLang v2.0 — Memadukan kecepatan Lua dengan dialek Samawa yang unik. Ringan, cepat, dan berakar budaya.
+  image:
+    file: ../../../assets/icon-extension.png
+  actions:
+    - text: Mulai Belajar
+      link: /id/guides/get-started/
+      icon: right-arrow
+      variant: primary
+    - text: Lihat di GitHub
+      link: https://github.com/Samawa-Language/samawa-language
+      icon: github
+      variant: minimal
+---
+
+import { Card, CardGrid, Steps, Tabs, TabItem, LinkCard } from '@astrojs/starlight/components';
+
+## Mengapa Memilih SamaLang?
+
+<CardGrid stagger>
+	<Card title="Sintaks Lokal" icon="translate">
+		Menggunakan kata kunci yang berakar dari **bahasa Samawa**, membuat alur logika terasa lebih dekat dengan warisan budaya lokal.
+	</Card>
+	<Card title="Performa Lua" icon="star">
+		Dibangun di atas **engine Lua**, memastikan eksekusi ultra-cepat dan penggunaan memori yang efisien.
+	</Card>
+	<Card title="Mudah Dipelajari" icon="rocket">
+		Sederhana dan langsung. Cocok untuk pemula yang ingin belajar pemrograman dengan sentuhan budaya.
+	</Card>
+	<Card title="Kompatibilitas Penuh" icon="setting">
+		Integrasikan secara mulus dengan modul Lua yang ada, menawarkan fleksibilitas tinggi bagi pengembang.
+	</Card>
+</CardGrid>
+
+---
+
+## Contoh Kode SamaLang
+
+Lihat bagaimana SamaLang memadukan logika tradisional dengan performa modern.
+
+<Tabs>
+  <TabItem label="Hello World">
+    ```bash
+    # Sapaan tradisional
+    tulis("Salam Sarea!")
+    ```
+  </TabItem>
+  <TabItem label="Variabel Lokal">
+    ```bash
+    ada aran = "SamaLang"
+    ada visi = "Digitalisasi Budaya"
+
+    tulis(aran .. " v2.0")
+    ```
+  </TabItem>
+  <TabItem label="Fungsi">
+    ```bash
+    fungsi sapa(nama)
+        semalik "Halo, " .. nama .. "!"
+    jure_mo
+
+    tulis(sapa("Dunia"))
+    ```
+  </TabItem>
+  <TabItem label="Percabangan">
+    ```bash
+    ada umur = 20
+
+    lamen umur >= 18 tres
+        tulis("Dewasa")
+    jure_mo
+    ```
+  </TabItem>
+</Tabs>
+
+---
+
+## Pemetaan Kata Kunci
+
+SamaLang menggunakan kata kunci Samawa yang ditranspile langsung ke Lua:
+
+| SamaLang | Lua | Kegunaan |
+|----------|-----|----------|
+| `ada` | `local` | Deklarasi variabel |
+| `fungsi` | `function` | Definisi fungsi |
+| `lamen` | `if` | Kondisional |
+| `tres` | `then` | Awal blok |
+| `jure_mo` | `end` | Akhir blok |
+| `selama` | `while` | Perulangan while |
+| `untuk` | `for` | Perulangan for |
+| `tulis` | `print` | Cetak output |
+| `semalik` | `return` | Kembalikan nilai |
+| `nda_isi` | `nil` | Nilai kosong |
+
+---
+
+## Langkah Selanjutnya
+
+<CardGrid>
+  <LinkCard
+    title="Mulai Belajar"
+    description="Instal SamaLang dan tulis program pertama Anda."
+    href="/id/guides/get-started/"
+  />
+  <LinkCard
+    title="Tipe Data"
+    description="Angka, string, boolean, nil, dan tabel."
+    href="/id/concepts/data-types"
+  />
+  <LinkCard
+    title="Referensi Sintaks"
+    description="Semua 18 kata kunci Samawa dengan contoh."
+    href="/id/syntax/ada"
+  />
+  <LinkCard
+    title="Referensi Lua"
+    description="Referensi teknis untuk engine Lua."
+    href="/id/reference/example"
+  />
+</CardGrid>
