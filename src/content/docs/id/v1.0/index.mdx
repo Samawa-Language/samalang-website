@@ -1,0 +1,82 @@
+---
+title: Samalang v1.0
+description: Bahasa pemrograman ringan yang terinspirasi dari Lua untuk ekstensi Zed — Dokumentasi Arsip v1.0
+template: splash
+hero:
+  tagline: Bahasa pemrograman ringan untuk ekstensi Zed
+  image:
+    file: ../../../../assets/icon-extension.png
+  actions:
+    - text: Mulai Sekarang
+      link: /id/
+      icon: right-arrow
+---
+
+import { Card, CardGrid, LinkCard, Tabs, TabItem } from '@astrojs/starlight/components';
+
+:::caution[Dokumentasi Arsip]
+Ini adalah dokumentasi arsip untuk **Samalang v1.0**. Untuk dokumentasi terkini, lihat [dokumentasi versi terbaru](/id/).
+:::
+
+## Contoh Cepat
+
+```sl
+# Tampilan Hello World dalam Samalang
+tulis("Halo, Dunia!")
+```
+
+```sl
+# Menggunakan variabel
+ada nama = "Samalang"
+ada tahun = 2025
+tulis(nama .. " rilis tahun " .. tahun)
+```
+
+```sl
+# Fungsi dan pengembalian nilai
+fungsi tambah(a, b)
+  semalik a + b
+jure_mo
+
+tulis(tambah(3, 5))
+```
+
+```sl
+# Perulangan dan kondisional
+ada bilangan = 10
+
+lamen bilangan > 5
+  tres
+    tulis("Bilangan besar")
+  lamen_no
+    tulis("Bilangan kecil")
+jure_mo
+
+untuk i = 1, 5 do
+  tulis(i)
+jure_mo
+```
+
+## Kata Kunci Samalang v1.0
+
+| Kata Kunci | Fungsi | Keterangan |
+|-----------|--------|------------|
+| `ada` | Deklarasi variabel | Menyatakan variabel lokal baru |
+| `fungsi` | Definisi fungsi | Mendefinisikan fungsi |
+| `lamen` | Percabangan if | Memulai blok kondisional |
+| `tres` | blok then | Blok yang dieksekusi jika kondisi benar |
+| `lama_no` | blok else | Blok alternatif jika kondisi salah |
+| `jure_mo` | Akhir blok | Menandai akhir blok atau fungsi |
+| `selama` | Perulangan while | Perulangan dengan kondisi |
+| `untuk` | Perulangan for | Perulangan dengan penghitung |
+| `tulis` | Cetak output | Mencetak nilai ke konsol |
+| `semalik` | Pengembalian nilai | Mengembalikan nilai dari fungsi |
+| `nda_isi` | Nol/nil | Menyatakan nilai kosong |
+
+:::note[Sintaks Komentar]
+Gunakan `#` untuk menulis komentar dalam kode Samalang. Contoh: `# Ini adalah komentar`.
+:::
+
+:::tip[Sintaks Kolon]
+Samalang menggunakan `do` sebagai penanda awal blok untuk `laman`, `selama`, dan `untuk`.
+:::

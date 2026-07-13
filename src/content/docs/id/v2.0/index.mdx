@@ -1,0 +1,145 @@
+---
+title: Samalang v2.0 — Bahasa Samawa
+description: Dokumentasi arsip untuk Samalang v2.0 — transpiler open-source berbasis Lua dengan keywords bahasa Samawa.
+template: splash
+hero:
+  tagline: Bahasa Samawa — Memadukan kecepatan Lua dengan dialek Samawa yang unik. Dibuat oleh Rzfan03.
+  image:
+    file: ../../../../assets/icon-extension.png
+  actions:
+    - text: Mulai Belajar
+      link: /id/v2.0/guides/get-started/
+      icon: right-arrow
+      variant: primary
+    - text: Lihat di GitHub
+      link: https://github.com/Samawa-Language/samawa-language
+      icon: github
+      variant: minimal
+---
+
+import { Card, CardGrid, Steps, Tabs, TabItem, LinkCard } from '@astrojs/starlight/components';
+
+:::caution[Dokumentasi Arsip]
+Ini adalah dokumentasi arsip untuk **Samalang v2.0**. Untuk dokumentasi versi terbaru, kunjungi [beranda Samalang](/id/).
+:::
+
+## Mengapa Memilih Samalang?
+
+<CardGrid stagger>
+	<Card title="Sintaks Lokal" icon="translate">
+		Menggunakan kata kunci yang berakar dari **bahasa Samawa**, membuat alur logika terasa lebih dekat dengan warisan budaya lokal.
+	</Card>
+	<Card title="Performa Lua" icon="star">
+		Dibangun di atas **engine Lua**, memastikan eksekusi ultra-cepat dan penggunaan memori yang efisien.
+	</Card>
+	<Card title="Mudah Dipelajari" icon="rocket">
+		Sederhana dan langsung. Cocok untuk pemula yang ingin belajar pemrograman dengan sentuhan budaya.
+	</Card>
+	<Card title="Kompatibilitas Penuh" icon="setting">
+		Integrasikan secara mulus dengan modul Lua yang ada, menawarkan fleksibilitas tinggi bagi pengembang.
+	</Card>
+</CardGrid>
+
+---
+
+## Contoh Kode Samalang
+
+Lihat bagaimana Samalang memadukan logika tradisional dengan performa modern.
+
+<Tabs>
+  <TabItem label="Hello World">
+    ```sl
+    # Sapaan tradisional
+    tulis("Salam Sarea!")
+    ```
+  </TabItem>
+  <TabItem label="Variabel Lokal">
+    ```sl
+    ada aran = "Samalang"
+    ada visi = "Digitalisasi Budaya"
+
+    tulis(aran .. " v2.0")
+    ```
+  </TabItem>
+  <TabItem label="Fungsi">
+    ```sl
+    fungsi sapa(nama)
+        semalik "Halo, " .. nama .. "!"
+    jure_mo
+
+    tulis(sapa("Dunia"))
+    ```
+  </TabItem>
+  <TabItem label="Percabangan">
+    ```sl
+    ada umur = 20
+
+    lamen umur >= 18 tres
+        tulis("Dewasa")
+    jure_mo
+    ```
+  </TabItem>
+</Tabs>
+
+---
+
+## Pemetaan Kata Kunci (21 Keywords)
+
+Samalang v2.0 menggunakan 21 kata kunci Samawa yang ditranspile langsung ke Lua:
+
+| Samalang | Lua | Kegunaan |
+|----------|-----|----------|
+| `ada` | `local` | Deklarasi variabel |
+| `fungsi` | `function` | Definisi fungsi |
+| `lamen` | `if` | Kondisional |
+| `tres` | `then` | Awal blok |
+| `lamen_no` | `else` | Alternatif kondisi |
+| `lamen_no_kebali` | `elseif` | Kondisi tambahan |
+| `jure_mo` | `end` | Akhir blok |
+| `selama` | `while` | Perulangan while |
+| `unti` | `while` (alt) | Perulangan while alternatif |
+| `boat` | `do` | Awal blok perulangan |
+| `untuk` | `for` | Perulangan for |
+| `sampe` | `until` | Perulangan repeat |
+| `jangka_mo` | `break` | Hentikan perulangan |
+| `tulis` | `print` | Cetak output |
+| `nda_isi` | `nil` | Nilai kosong |
+| `no` | `not` | Logika NOT |
+| `dan` | `and` | Logika AND |
+| `atau` | `or` | Logika OR |
+| `tutu` | `true` | Benar |
+| `siong` | `false` | Salah |
+| `semalik` | `return` | Kembalikan nilai |
+
+---
+
+## Langkah Selanjutnya
+
+<CardGrid>
+  <LinkCard
+    title="Mulai Belajar"
+    description="Instal Samalang dan tulis program pertama Anda."
+    href="/id/v2.0/guides/get-started/"
+  />
+  <LinkCard
+    title="Tipe Data"
+    description="Angka, string, boolean, nil, dan tabel."
+    href="/id/v2.0/concepts/data-types"
+  />
+  <LinkCard
+    title="Referensi Sintaks"
+    description="Semua 21 kata kunci Samawa dengan contoh."
+    href="/id/v2.0/syntax/ada"
+  />
+  <LinkCard
+    title="Operator"
+    description="Operator aritmatika, perbandingan, logika, dan string."
+    href="/id/v2.0/concepts/operators"
+  />
+</CardGrid>
+
+---
+
+<p style="text-align:center;color:#888;margin-top:2rem;">
+  Dibuat oleh <strong>Rizqy Fajrul Syabani</strong> (<a href="https://github.com/Rzfan03">@Rzfan03</a>) — Proyek Bahasa Samawa
+</p>

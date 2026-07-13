@@ -1,0 +1,173 @@
+---
+title: Samalang v2.0
+description: Archived documentation for SamaLang v2.0 — expanded to 21 Samawa keywords with booleans, logical operators, and control flow. Created by Rzfan03 (Rizqy Fajrul Syabani).
+template: splash
+hero:
+  tagline: SamaLang v2.0 — Expanded to 21 Samawa keywords. Where Lua meets Samawa culture.
+  image:
+    file: ../../../assets/icon-extension.png
+  actions:
+    - text: Get Started
+      link: /v2.0/guides/get-started/
+      icon: right-arrow
+      variant: primary
+    - text: View on GitHub
+      link: https://github.com/Samawa-Language/samawa-language
+      icon: github
+      variant: minimal
+---
+
+import { Card, CardGrid, Steps, Tabs, TabItem, LinkCard } from '@astrojs/starlight/components';
+
+:::caution[Archived Documentation]
+This is archived documentation for **SamaLang v2.0**. For the latest version, visit the [current documentation](/).
+:::
+
+## Why Choose SamaLang?
+
+<CardGrid stagger>
+	<Card title="Localized Syntax" icon="translate">
+		Featuring keywords rooted in the **Samawa language**, making logical flow feel closer to local heritage.
+	</Card>
+	<Card title="Lua Performance" icon="star">
+		Built on the **Lua engine**, ensuring ultra-fast execution and efficient memory usage.
+	</Card>
+	<Card title="Easy to Learn" icon="rocket">
+		Simple and direct. Perfect for beginners who want to learn programming with a cultural twist.
+	</Card>
+	<Card title="Full Compatibility" icon="setting">
+		Seamlessly integrate with existing Lua modules, offering high flexibility for developers.
+	</Card>
+</CardGrid>
+
+---
+
+## Quick Look at SamaLang v2.0
+
+See how SamaLang v2.0 blends traditional logic with modern performance.
+
+<Tabs>
+  <TabItem label="Hello World">
+    ```sl
+    # Traditional greeting
+    tulis("Salam Sarea!")
+    ```
+  </TabItem>
+  <TabItem label="Local Variables">
+    ```sl
+    ada aran = "SamaLang"
+    ada visi = "Digitalizing Culture"
+
+    tulis(aran .. " v2.0")
+    tulis("Visi: " .. visi)
+    ```
+  </TabItem>
+  <TabItem label="Function">
+    ```sl
+    fungsi sapa(nama)
+        semalik "Halo, " .. nama .. "!"
+    jure_mo
+
+    tulis(sapa("Dunia"))
+    ```
+  </TabItem>
+  <TabItem label="Control Flow">
+    ```sl
+    ada umur = 20
+
+    lamen umur >= 18 tres
+        tulis("Dewasa")
+    jure_mo
+    lamen_no
+        tulis("Anak-anak")
+    jure_mo
+    ```
+  </TabItem>
+  <TabItem label="Loop">
+    ```sl
+    # Countdown
+    untuk i = 5, 1, -1 boat
+        tulis(i)
+    jure_mo
+    tulis("Lepas landas!")
+    ```
+  </TabItem>
+</Tabs>
+
+---
+
+## Keyword Mapping
+
+SamaLang v2.0 uses **21 Samawa keywords** that transpile directly to Lua:
+
+| SamaLang | Lua | Meaning |
+|----------|-----|---------|
+| `ada` | `local` | Declare variable |
+| `fungsi` | `function` | Define function |
+| `lamen` | `if` | Conditional |
+| `tres` | `then` | Start block |
+| `lamen_no` | `else` | Alternative branch |
+| `lamen_no_kebali` | `elseif` | Additional conditional branch |
+| `jure_mo` | `end` | End block |
+| `selama` | `while` | While loop |
+| `unti` | `while` | While loop (alternate) |
+| `boat` | `do` | Start loop body |
+| `untuk` | `for` | Numeric for loop |
+| `sampe` | `until` | Repeat-until loop |
+| `jangka_mo` | `break` | Exit loop |
+| `tulis` | `print` | Print output |
+| `nda_isi` | `nil` | Null value |
+| `no` | `not` | Logical NOT |
+| `dan` | `and` | Logical AND |
+| `atau` | `or` | Logical OR |
+| `tutu` | `true` | Boolean true |
+| `siong` | `false` | Boolean false |
+| `semalik` | `return` | Return value |
+
+:::note
+SamaLang v2.0 uses `#` for comments (not `--` like Lua).
+:::
+
+---
+
+## What's New in v2.0
+
+SamaLang v2.0 expanded from **11 to 21 keywords**, adding:
+
+- **Boolean literals:** `tutu` (true) and `siong` (false)
+- **Logical operators:** `no` (not), `dan` (and), `atau` (or)
+- **Control flow:** `lamen_no_kebali` (elseif), `sampe` (until), `jangka_mo` (break)
+- **Loop keywords:** `unti` (while alt), `boat` (do)
+
+---
+
+## Next Steps
+
+<CardGrid>
+  <LinkCard
+    title="Get Started"
+    description="Install SamaLang v2.0 and write your first program."
+    href="/v2.0/guides/get-started/"
+  />
+  <LinkCard
+    title="Data Types"
+    description="Numbers, strings, booleans, nil, and tables in v2.0."
+    href="/v2.0/concepts/data-types"
+  />
+  <LinkCard
+    title="Syntax Reference"
+    description="All 21 Samawa keywords with examples."
+    href="/v2.0/syntax/ada"
+  />
+  <LinkCard
+    title="Current Documentation"
+    description="Visit the latest SamaLang documentation."
+    href="/"
+  />
+</CardGrid>
+
+---
+
+<p style="text-align:center;color:#888;margin-top:2rem;">
+  Created by <strong>Rizqy Fajrul Syabani</strong> (<a href="https://github.com/Rzfan03">@Rzfan03</a>) — Samawa Language Project
+</p>
