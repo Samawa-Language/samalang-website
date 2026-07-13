@@ -1,5 +1,6 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import versionSelectorPlugin from "./src/plugins/version-selector";
 
 export default defineConfig({
   site: 'https://samalang.netlify.app/',
@@ -9,6 +10,7 @@ export default defineConfig({
         en: 'Samalang',
         id: 'Samalang',
       },
+      plugins: [versionSelectorPlugin()],
       defaultLocale: 'root',
       locales: {
         root: {
@@ -281,7 +283,7 @@ export default defineConfig({
         },
         {
           label: "Reference",
-          autogenerate: { directory: "reference" },
+          items: [{ autogenerate: { directory: "reference" } }],
         },
       ],
     }),
