@@ -33,32 +33,64 @@ export default defineConfig({
             content: "GM7nwkL1De6nDTqyLvcNws0aBA97tgP-SCoCjAFu628",
           },
         },
+        // Author / Creator
         {
           tag: "meta",
           attrs: {
-            property: "og:image",
-            content: "https://samalang.netlify.app/og-image.png",
+            name: "author",
+            content: "Rizqy Fajrul Syabani",
           },
         },
         {
           tag: "meta",
           attrs: {
-            name: "twitter:image",
-            content: "https://samalang.netlify.app/og-image.png",
+            name: "creator",
+            content: "Rzfan03",
           },
         },
+        {
+          tag: "meta",
+          attrs: {
+            name: "publisher",
+            content: "Samawa-Language",
+          },
+        },
+        // Primary SEO
         {
           tag: "meta",
           attrs: {
             name: "description",
-            content: "Samalang - Dokumentasi bahasa pemrograman berbasis bahasa Samawa. Pelajari sintaksis, instalasi, dan panduan lengkap di sini.",
+            content: "SamaLang — bahasa pemrograman open-source berbasis Lua dengan keywords bahasa Samawa. Transpiler cepat, ringan, dan sarat nilai budaya. Created by Rzfan03.",
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            name: "keywords",
+            content: "SamaLang, Samawa, programming language, bahasa pemrograman, Lua transpiler, Samawa culture, open-source, Rzfan03, Rizqy Fajrul Syabani",
+          },
+        },
+        // Canonical
+        {
+          tag: "link",
+          attrs: {
+            rel: "canonical",
+            href: "https://samalang.netlify.app/",
+          },
+        },
+        // Open Graph
+        {
+          tag: "meta",
+          attrs: {
+            property: "og:title",
+            content: "SamaLang — Programming Language with Samawa Cultural Roots",
           },
         },
         {
           tag: "meta",
           attrs: {
             property: "og:description",
-            content: "Pelajari Samalang, bahasa pemrograman unik berbasis kearifan lokal Samawa.",
+            content: "SamaLang is an open-source Lua-based transpiler using Samawa language keywords. Fast, lightweight, and culturally rooted. Created by Rzfan03 (Rizqy Fajrul Syabani).",
           },
         },
         {
@@ -71,10 +103,121 @@ export default defineConfig({
         {
           tag: "meta",
           attrs: {
+            property: "og:url",
+            content: "https://samalang.netlify.app/",
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            property: "og:image",
+            content: "https://samalang.netlify.app/og-image.png",
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            property: "og:site_name",
+            content: "SamaLang",
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            property: "og:locale",
+            content: "en_US",
+          },
+        },
+        // Twitter Card
+        {
+          tag: "meta",
+          attrs: {
             name: "twitter:card",
             content: "summary_large_image",
           },
-        }
+        },
+        {
+          tag: "meta",
+          attrs: {
+            name: "twitter:title",
+            content: "SamaLang — Programming Language with Samawa Cultural Roots",
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            name: "twitter:description",
+            content: "Open-source Lua-based transpiler using Samawa language keywords. Created by Rzfan03.",
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            name: "twitter:image",
+            content: "https://samalang.netlify.app/og-image.png",
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            name: "twitter:creator",
+            content: "@Rzfan03",
+          },
+        },
+        // Robots
+        {
+          tag: "meta",
+          attrs: {
+            name: "robots",
+            content: "index, follow, max-image-preview:large, max-snippet:-1",
+          },
+        },
+        // Geo
+        {
+          tag: "meta",
+          attrs: {
+            name: "geo.region",
+            content: "ID-NTB",
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            name: "geo.placename",
+            content: "Sumbawa",
+          },
+        },
+        // JSON-LD Structured Data
+        {
+          tag: "script",
+          attrs: {
+            type: "application/ld+json",
+          },
+          content: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareSourceCode",
+            "name": "SamaLang",
+            "description": "An open-source Lua-based transpiler using Samawa language keywords. Fast, lightweight, and culturally rooted.",
+            "url": "https://samalang.netlify.app/",
+            "codeRepository": "https://github.com/Samawa-Language/samawa-language",
+            "programmingLanguage": "Lua",
+            "license": "https://opensource.org/licenses/MIT",
+            "author": {
+              "@type": "Person",
+              "name": "Rizqy Fajrul Syabani",
+              "alternateName": "Rzfan03",
+              "url": "https://github.com/Rzfan03"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Samawa-Language",
+              "url": "https://github.com/Samawa-Language"
+            },
+            "keywords": ["SamaLang", "Samawa", "Lua", "programming language", "transpiler", "Indonesian programming"],
+            "inLanguage": ["en", "id"],
+            "operatingSystem": ["Linux", "macOS", "Windows"]
+          }),
+        },
       ],
       social: [
         {
