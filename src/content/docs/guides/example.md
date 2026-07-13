@@ -5,34 +5,63 @@ description: How to install SamaLang on your system
 
 ## How to Install SamaLang
 
-Choose the installation method that best suits your needs. The fastest way is using NPM, but you can also perform a manual installation by cloning directly from our official repository.
+Choose the installation method that best suits your needs.
 
-Make sure you have **Node.js** installed on your system before starting the installation process via NPM.
+### Install via NPM (Recommended)
 
-### Install Compiler via NPM (Recommended)
-
-```bash
-npm i -g samalang-compiler
-```
-
-After installation, you can run SamaLang files directly:
+Requires [Node.js](https://nodejs.org/) >= 18.
 
 ```bash
-sl filename.sl
+npm install -g samalang
 ```
 
-### Clone from Repository
+After installation, verify it works:
+
+```bash
+sl --version
+sl --help
+```
+
+### Install via curl (Linux / macOS)
+
+One-liner install — auto-detects your OS and architecture:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Samawa-Language/samawa-language/main/install.sh | bash
+```
+
+### Install from Source
 
 ```bash
 git clone https://github.com/Samawa-Language/samawa-language.git
 cd samawa-language
-./install.sh install
+npm install
+npm link
 ```
 
-This will symlink the `sl` binary to `/usr/local/bin/sl`.
-
-### Uninstall
+## Usage
 
 ```bash
-./install.sh uninstall
+sl run main.sl              # Transpile and execute
+sl transpile main.sl        # Transpile to Lua only
+sl transpile main.sl -o out.lua  # Save transpiled Lua to file
+sl watch main.sl            # Auto-recompile on file changes
+sl --help                   # Show all options
 ```
+
+## Uninstall
+
+```bash
+# NPM
+npm uninstall -g samalang
+
+# curl installer
+curl -fsSL https://raw.githubusercontent.com/Samawa-Language/samawa-language/main/install.sh | bash -s -- uninstall
+```
+
+## Editor Support
+
+Install syntax highlighting for your editor:
+
+- **VS Code**: Search "Samawa-Language" in Extensions, or install `.vsix` from [GitHub Releases](https://github.com/Samawa-Language/samawa-language/releases)
+- **Zed**: Search "Samalang" in Extensions

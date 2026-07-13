@@ -3,9 +3,9 @@ title: Getting Started
 description: Start programming with SamaLang — Mulai berprogram dengan SamaLang
 ---
 
-Welcome to **SamaLang v2.0** — where modern coding meets Samawa culture.
+Welcome to **SamaLang v2.1** — where modern coding meets Samawa culture.
 
-Selamat datang di **SamaLang v2.0** — di mana pemrograman modern bertemu budaya Samawa.
+Selamat datang di **SamaLang v2.1** — di mana pemrograman modern bertemu budaya Samawa.
 
 SamaLang is a programming language built on top of **Lua**, using keywords from the **Samawa language**. It offers a powerful, lightweight environment with a meaningful cultural identity.
 

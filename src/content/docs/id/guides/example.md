@@ -5,34 +5,63 @@ description: Cara menginstal SamaLang di sistem Anda
 
 ## Cara Menginstal SamaLang
 
-Pilih metode instalasi yang paling sesuai dengan kebutuhan Anda. Cara tercepat adalah menggunakan NPM, tetapi Anda juga bisa melakukan instalasi manual dengan mengklon langsung dari repository resmi kami.
+Pilih metode instalasi yang paling sesuai dengan kebutuhan Anda.
 
-Pastikan Anda memiliki **Node.js** terinstal di sistem Anda sebelum memulai proses instalasi via NPM.
+### Instal via NPM (Disarankan)
 
-### Instal Compiler via NPM (Disarankan)
-
-```bash
-npm i -g samalang-compiler
-```
-
-Setelah instalasi, Anda bisa menjalankan file SamaLang langsung:
+Membutuhkan [Node.js](https://nodejs.org/) >= 18.
 
 ```bash
-sl filename.sl
+npm install -g samalang
 ```
 
-### Clone dari Repository
+Setelah instalasi, pastikan berjalan dengan benar:
+
+```bash
+sl --version
+sl --help
+```
+
+### Instal via curl (Linux / macOS)
+
+Satu baris perintah — otomatis mendeteksi OS dan arsitektur:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Samawa-Language/samawa-language/main/install.sh | bash
+```
+
+### Instal dari Source
 
 ```bash
 git clone https://github.com/Samawa-Language/samawa-language.git
 cd samawa-language
-./install.sh install
+npm install
+npm link
 ```
 
-Ini akan membuat symlink binary `sl` ke `/usr/local/bin/sl`.
-
-### Uninstal
+## Penggunaan
 
 ```bash
-./install.sh uninstall
+sl run main.sl              # Transpile dan eksekusi
+sl transpile main.sl        # Hanya transpile ke Lua
+sl transpile main.sl -o out.lua  # Simpan hasil transpile ke file
+sl watch main.sl            # Auto-recompile saat file berubah
+sl --help                   # Tampilkan semua opsi
 ```
+
+## Uninstal
+
+```bash
+# NPM
+npm uninstall -g samalang
+
+# curl installer
+curl -fsSL https://raw.githubusercontent.com/Samawa-Language/samawa-language/main/install.sh | bash -s -- uninstall
+```
+
+## Dukungan Editor
+
+Instal syntax highlighting untuk editor Anda:
+
+- **VS Code**: Cari "Samawa-Language" di Extensions, atau install `.vsix` dari [GitHub Releases](https://github.com/Samawa-Language/samawa-language/releases)
+- **Zed**: Cari "Samalang" di Extensions

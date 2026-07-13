@@ -3,7 +3,7 @@ title: Mulai Belajar
 description: Mulai berprogram dengan SamaLang — tutorial untuk pemula
 ---
 
-Selamat datang di **SamaLang v2.0** — di mana pemrograman modern bertemu budaya Samawa.
+Selamat datang di **SamaLang v2.1** — di mana pemrograman modern bertemu budaya Samawa.
 
 SamaLang adalah bahasa pemrograman yang dibangun di atas **Lua**, menggunakan kata kunci dari **bahasa Samawa**. Menawarkan lingkungan yang powerful dan ringan dengan identitas budaya yang bermakna.
 
