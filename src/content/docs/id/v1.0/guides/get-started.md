@@ -103,6 +103,6 @@ jure_mo
 
 ## Langkah Selanjutnya
 
-- Pelajari [instalasi](/id/v1.0/guides/installation) untuk pengaturan lanjutan
-- Lihat [tipe data](/id/v1.0/concepts/data-types) untuk memahami jenis data
-- Eksplorasi [sintaks](/id/v1.0/syntax/ada) untuk detail setiap kata kunci
+- Pelajari [instalasi](/id/v10/guides/installation) untuk pengaturan lanjutan
+- Lihat [tipe data](/id/v10/concepts/data-types) untuk memahami jenis data
+- Eksplorasi [sintaks](/id/v10/syntax/ada) untuk detail setiap kata kunci

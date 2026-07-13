@@ -74,11 +74,11 @@ SamaLang files (`.sl`) can be edited in any text editor. For syntax highlighting
   <LinkCard
     title="Get Started"
     description="Write your first SamaLang program."
-    href="/v1.0/guides/get-started/"
+    href="/v10/guides/get-started/"
   />
   <LinkCard
     title="Syntax Reference"
     description="Learn all 11 SamaLang v1.0 keywords."
-    href="/v1.0/syntax/ada"
+    href="/v10/syntax/ada"
   />
 </CardGrid>

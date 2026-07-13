@@ -63,21 +63,21 @@ Tujuan Samalang adalah memberdayakan pengembang untuk membangun teknologi modern
   <LinkCard
     title="Tipe Data"
     description="Pelajari tentang angka, string, boolean, nil, dan tabel."
-    href="/id/v2.0/concepts/data-types"
+    href="/id/v20/concepts/data-types"
   />
   <LinkCard
     title="Referensi Sintaks"
     description="Semua 21 kata kunci Samawa dengan contoh."
-    href="/id/v2.0/syntax/ada"
+    href="/id/v20/syntax/ada"
   />
   <LinkCard
     title="Operator"
     description="Operator aritmatika, perbandingan, logika, dan string."
-    href="/id/v2.0/concepts/operators"
+    href="/id/v20/concepts/operators"
   />
   <LinkCard
     title="Instalasi"
     description="Pasang Samalang di editor Anda."
-    href="/id/v2.0/guides/installation"
+    href="/id/v20/guides/installation"
   />
 </CardGrid>

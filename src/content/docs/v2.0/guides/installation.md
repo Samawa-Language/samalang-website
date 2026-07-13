@@ -80,11 +80,11 @@ my-project/
   <LinkCard
     title="Get Started"
     description="Write your first SamaLang program."
-    href="/v2.0/guides/get-started/"
+    href="/v20/guides/get-started/"
   />
   <LinkCard
     title="Syntax Reference"
     description="All 21 Samawa keywords with examples."
-    href="/v2.0/syntax/ada"
+    href="/v20/syntax/ada"
   />
 </CardGrid>

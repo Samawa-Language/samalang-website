@@ -77,4 +77,4 @@ proyek-samalang/
 
 ## Selanjutnya
 
-Setelah instalasi selesai, lanjutkan ke [Mulai Belajar](/id/v2.0/guides/get-started/) untuk memahami dasar-dasar Samalang.
+Setelah instalasi selesai, lanjutkan ke [Mulai Belajar](/id/v20/guides/get-started/) untuk memahami dasar-dasar Samalang.

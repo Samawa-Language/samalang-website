@@ -106,12 +106,12 @@ Discover how SamaLang interfaces with the Lua runtime, allowing you to use profe
   <LinkCard
     title="Data Types"
     description="Learn about numbers, strings, booleans, nil, and tables."
-    href="/v2.0/concepts/data-types"
+    href="/v20/concepts/data-types"
   />
   <LinkCard
     title="Syntax Reference"
     description="All 21 Samawa keywords with examples."
-    href="/v2.0/syntax/ada"
+    href="/v20/syntax/ada"
   />
   <LinkCard
     title="Current Docs"
