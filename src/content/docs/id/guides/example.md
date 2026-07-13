@@ -30,6 +30,12 @@ Satu baris perintah — otomatis mendeteksi OS dan arsitektur:
 curl -fsSL https://raw.githubusercontent.com/Samawa-Language/samawa-language/main/install.sh | bash
 ```
 
+### Instal via PowerShell (Windows)
+
+```powershell
+irm https://raw.githubusercontent.com/Samawa-Language/samawa-language/main/install.ps1 | iex
+```
+
 ### Instal dari Source
 
 ```bash
@@ -55,8 +61,12 @@ sl --help                   # Tampilkan semua opsi
 # NPM
 npm uninstall -g samalang
 
-# curl installer
+# curl installer (Linux/macOS)
 curl -fsSL https://raw.githubusercontent.com/Samawa-Language/samawa-language/main/install.sh | bash -s -- uninstall
+
+# PowerShell (Windows)
+Remove-Item "$env:USERPROFILE\.samalang" -Recurse -Force
+npm uninstall -g samalang
 ```
 
 ## Dukungan Editor
