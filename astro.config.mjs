@@ -6,8 +6,8 @@ export default defineConfig({
   integrations: [
     starlight({
       title: {
-        en: 'SamaLang',
-        id: 'SamaLang',
+        en: 'Samalang',
+        id: 'Samalang',
       },
       defaultLocale: 'root',
       locales: {
@@ -60,14 +60,14 @@ export default defineConfig({
           tag: "meta",
           attrs: {
             name: "description",
-            content: "SamaLang — bahasa pemrograman open-source berbasis Lua dengan keywords bahasa Samawa. Transpiler cepat, ringan, dan sarat nilai budaya. Created by Rzfan03.",
+            content: "Samalang — bahasa pemrograman open-source berbasis Lua dengan keywords bahasa Samawa. Transpiler cepat, ringan, dan sarat nilai budaya. Created by Rzfan03.",
           },
         },
         {
           tag: "meta",
           attrs: {
             name: "keywords",
-            content: "SamaLang, Samawa, programming language, bahasa pemrograman, Lua transpiler, Samawa culture, open-source, Rzfan03, Rizqy Fajrul Syabani",
+            content: "Samalang, Samawa, programming language, bahasa pemrograman, Lua transpiler, Samawa culture, open-source, Rzfan03, Rizqy Fajrul Syabani",
           },
         },
         // Canonical
@@ -83,14 +83,14 @@ export default defineConfig({
           tag: "meta",
           attrs: {
             property: "og:title",
-            content: "SamaLang — Programming Language with Samawa Cultural Roots",
+            content: "Samalang — Samawa Language",
           },
         },
         {
           tag: "meta",
           attrs: {
             property: "og:description",
-            content: "SamaLang is an open-source Lua-based transpiler using Samawa language keywords. Fast, lightweight, and culturally rooted. Created by Rzfan03 (Rizqy Fajrul Syabani).",
+            content: "Samalang is an open-source Lua-based transpiler using Samawa language keywords. Created by Rzfan03 (Rizqy Fajrul Syabani).",
           },
         },
         {
@@ -118,7 +118,7 @@ export default defineConfig({
           tag: "meta",
           attrs: {
             property: "og:site_name",
-            content: "SamaLang",
+            content: "Samalang",
           },
         },
         {
@@ -140,7 +140,7 @@ export default defineConfig({
           tag: "meta",
           attrs: {
             name: "twitter:title",
-            content: "SamaLang — Programming Language with Samawa Cultural Roots",
+            content: "Samalang — Samawa Language",
           },
         },
         {
@@ -196,8 +196,8 @@ export default defineConfig({
           content: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "SoftwareSourceCode",
-            "name": "SamaLang",
-            "description": "An open-source Lua-based transpiler using Samawa language keywords. Fast, lightweight, and culturally rooted.",
+            "name": "Samalang",
+            "description": "An open-source Lua-based transpiler using Samawa language keywords.",
             "url": "https://samalang.netlify.app/",
             "codeRepository": "https://github.com/Samawa-Language/samawa-language",
             "programmingLanguage": "Lua",
@@ -213,7 +213,7 @@ export default defineConfig({
               "name": "Samawa-Language",
               "url": "https://github.com/Samawa-Language"
             },
-            "keywords": ["SamaLang", "Samawa", "Lua", "programming language", "transpiler", "Indonesian programming"],
+            "keywords": ["Samalang", "Samawa", "Lua", "programming language", "transpiler", "Indonesian programming"],
             "inLanguage": ["en", "id"],
             "operatingSystem": ["Linux", "macOS", "Windows"]
           }),
